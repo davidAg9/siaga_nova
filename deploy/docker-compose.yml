@@ -1,0 +1,27 @@
+# Run the whole SIAGA stack:  cd siaga && docker compose -f deploy/docker-compose.yml up --build
+# API on :8080 (with auth + rate limiting), dashboard on :8501.
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.api
+    ports:
+      - "8080:8080"
+    environment:
+      # Set a real key list in production; leave empty for local development.
+      SIAGA_API_KEYS: "${SIAGA_API_KEYS:-}"
+      SIAGA_RATE_RPM: "${SIAGA_RATE_RPM:-60}"
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      SIAGA_API: "http://api:8080"
+      SIAGA_API_KEY: "${SIAGA_API_KEY:-}"
+    depends_on:
+      - api
+    restart: unless-stopped

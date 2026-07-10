@@ -1,0 +1,35 @@
+[workspace]
+name = "siaga"
+version = "0.1.0"
+description = "SIAGA: an early-warning intelligence layer for ASEAN public health"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "linux-64"]
+
+# Runtime dependencies for the submission: pipeline, notebook, and dashboard.
+# (Report-PDF tooling like weasyprint/pandoc lives in the repo-root workbench env,
+# not here, so this folder stays a clean, self-contained deliverable.)
+[dependencies]
+python = "3.12.*"
+pandas = ">=2.2"
+numpy = ">=1.26"
+scikit-learn = ">=1.5"
+scipy = ">=1.13"
+statsmodels = ">=0.14"
+shap = ">=0.46"
+matplotlib = ">=3.8"
+seaborn = ">=0.13"
+plotly = ">=5.22"
+streamlit = ">=1.36"
+joblib = ">=1.4"
+openpyxl = ">=3.1"
+requests = ">=2.32"
+ipykernel = ">=6.29"
+jupytext = ">=1.16"
+nbconvert = ">=7.16"
+
+# Convenience commands, run from inside siaga/ with `pixi run <task>`.
+[tasks]
+train = "python -m pipeline.train"
+train-offline = "python -m pipeline.train --offline"
+dashboard = "streamlit run dashboard/app.py"
+notebook = "jupyter lab notebooks/siaga_analysis.ipynb"

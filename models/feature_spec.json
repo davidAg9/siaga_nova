@@ -1,0 +1,72 @@
+[
+  {
+    "feature": "physicians_per_1000",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "nurses_midwives_per_1000",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "pharma_workers_per_1000",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "immunization_dpt",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "immunization_measles",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "tb_prevalence",
+    "monotonic": -1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "hiv_prevalence",
+    "monotonic": -1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "undernourished_pct",
+    "monotonic": -1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "crude_birth_rate",
+    "monotonic": 0,
+    "kind": "context"
+  },
+  {
+    "feature": "log_capex_per_capita",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "log_gdp_per_capita",
+    "monotonic": 1,
+    "kind": "context"
+  },
+  {
+    "feature": "sanitation_pct",
+    "monotonic": 1,
+    "kind": "actionable"
+  },
+  {
+    "feature": "agriculture_pct_gdp",
+    "monotonic": -1,
+    "kind": "context"
+  },
+  {
+    "feature": "year",
+    "monotonic": 0,
+    "kind": "context"
+  }
+]

@@ -1,0 +1,13 @@
+# Pixi environment (reproduced from pixi.toml + pixi.lock, do not commit or zip)
+.pixi/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Go build output
+api/siaga-api
+
+# OS
+.DS_Store

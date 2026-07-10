@@ -1,0 +1,796 @@
+{
+  "Brunei Darussalam": {
+    "iso3": "BRN",
+    "crude_birth_rate": {
+      "value": 16.7,
+      "year": 2014
+    },
+    "crude_death_rate": {
+      "value": 3.6,
+      "year": 2014
+    },
+    "govt_health_capex_musd": {
+      "value": 18.9,
+      "year": 2015
+    },
+    "immunization_dpt": {
+      "value": 99.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 97.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 7.4,
+      "year": 2014
+    },
+    "life_expectancy": {
+      "value": 77.35,
+      "year": 2014
+    },
+    "life_expectancy_female": {
+      "value": 78.8,
+      "year": 2014
+    },
+    "life_expectancy_male": {
+      "value": 75.9,
+      "year": 2014
+    },
+    "maternal_mortality": {
+      "value": 27.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 8.195,
+      "year": 2012
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.412,
+      "year": 2012
+    },
+    "physicians_per_1000": {
+      "value": 1.47,
+      "year": 2012
+    },
+    "tb_prevalence": {
+      "value": 311.0,
+      "year": 2010
+    },
+    "under5_mortality": {
+      "value": 8.7,
+      "year": 2014
+    },
+    "undernourished_pct": {
+      "value": 5.0,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 29.1,
+      "year": 2010
+    }
+  },
+  "Cambodia": {
+    "iso3": "KHM",
+    "crude_birth_rate": {
+      "value": 25.7,
+      "year": 2013
+    },
+    "crude_death_rate": {
+      "value": 6.0,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 21.1,
+      "year": 2015
+    },
+    "hiv_deaths": {
+      "value": 1800.0,
+      "year": 2016
+    },
+    "hiv_prevalence": {
+      "value": 0.6,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 97.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 94.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 33.0,
+      "year": 2012
+    },
+    "life_expectancy": {
+      "value": 66.6,
+      "year": 2013
+    },
+    "life_expectancy_female": {
+      "value": 69.8,
+      "year": 2013
+    },
+    "life_expectancy_male": {
+      "value": 63.4,
+      "year": 2013
+    },
+    "malaria_cases": {
+      "value": 407.0,
+      "year": 2010
+    },
+    "maternal_mortality": {
+      "value": 170.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 0.956,
+      "year": 2013
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.04,
+      "year": 2013
+    },
+    "physicians_per_1000": {
+      "value": 0.168,
+      "year": 2013
+    },
+    "tb_prevalence": {
+      "value": 764.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 40.0,
+      "year": 2012
+    },
+    "undernourished_pct": {
+      "value": 14.2,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 29.0,
+      "year": 2010
+    }
+  },
+  "Indonesia": {
+    "iso3": "IDN",
+    "crude_birth_rate": {
+      "value": 18.8,
+      "year": 2013
+    },
+    "crude_death_rate": {
+      "value": 6.2,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 1737.2,
+      "year": 2015
+    },
+    "hiv_deaths": {
+      "value": 38000.0,
+      "year": 2016
+    },
+    "hiv_prevalence": {
+      "value": 0.4,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 90.7,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 78.7,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 27.2,
+      "year": 2012
+    },
+    "life_expectancy": {
+      "value": 69.4,
+      "year": 2012
+    },
+    "life_expectancy_female": {
+      "value": 71.1,
+      "year": 2012
+    },
+    "life_expectancy_male": {
+      "value": 67.7,
+      "year": 2012
+    },
+    "malaria_cases": {
+      "value": 39.8,
+      "year": 2014
+    },
+    "maternal_mortality": {
+      "value": 190.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 1.365,
+      "year": 2012
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.103,
+      "year": 2012
+    },
+    "physicians_per_1000": {
+      "value": 0.201,
+      "year": 2012
+    },
+    "tb_prevalence": {
+      "value": 297.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 40.0,
+      "year": 2012
+    },
+    "undernourished_pct": {
+      "value": 7.6,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 19.9,
+      "year": 2013
+    }
+  },
+  "Lao PDR": {
+    "iso3": "LAO",
+    "crude_birth_rate": {
+      "value": 27.2,
+      "year": 2013
+    },
+    "crude_death_rate": {
+      "value": 7.0,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 25.2,
+      "year": 2015
+    },
+    "hiv_prevalence": {
+      "value": 0.3,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 89.0,
+      "year": 2013
+    },
+    "immunization_measles": {
+      "value": 87.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 48.9,
+      "year": 2013
+    },
+    "life_expectancy": {
+      "value": 67.7,
+      "year": 2011
+    },
+    "life_expectancy_female": {
+      "value": 68.9,
+      "year": 2011
+    },
+    "life_expectancy_male": {
+      "value": 66.5,
+      "year": 2011
+    },
+    "maternal_mortality": {
+      "value": 220.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 0.862,
+      "year": 2012
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.114,
+      "year": 2012
+    },
+    "physicians_per_1000": {
+      "value": 0.179,
+      "year": 2012
+    },
+    "tb_prevalence": {
+      "value": 514.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 64.3,
+      "year": 2013
+    },
+    "undernourished_pct": {
+      "value": 18.5,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 26.5,
+      "year": 2011
+    }
+  },
+  "Malaysia": {
+    "iso3": "MYS",
+    "crude_birth_rate": {
+      "value": 17.2,
+      "year": 2012
+    },
+    "crude_death_rate": {
+      "value": 4.7,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 367.2,
+      "year": 2015
+    },
+    "hiv_deaths": {
+      "value": 7000.0,
+      "year": 2016
+    },
+    "hiv_prevalence": {
+      "value": 0.4,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 93.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 94.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 6.6,
+      "year": 2012
+    },
+    "life_expectancy": {
+      "value": 75.05,
+      "year": 2013
+    },
+    "life_expectancy_female": {
+      "value": 77.4,
+      "year": 2013
+    },
+    "life_expectancy_male": {
+      "value": 72.7,
+      "year": 2013
+    },
+    "malaria_cases": {
+      "value": 23.5,
+      "year": 2011
+    },
+    "maternal_mortality": {
+      "value": 29.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 3.397,
+      "year": 2011
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.434,
+      "year": 2011
+    },
+    "physicians_per_1000": {
+      "value": 1.281,
+      "year": 2011
+    },
+    "tb_prevalence": {
+      "value": 101.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 9.0,
+      "year": 2012
+    },
+    "undernourished_pct": {
+      "value": 5.0,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 12.9,
+      "year": 2006
+    }
+  },
+  "Myanmar": {
+    "iso3": "MMR",
+    "crude_birth_rate": {
+      "value": 17.2,
+      "year": 2013
+    },
+    "crude_death_rate": {
+      "value": 8.5,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 297.5,
+      "year": 2015
+    },
+    "hiv_deaths": {
+      "value": 7800.0,
+      "year": 2016
+    },
+    "hiv_prevalence": {
+      "value": 0.8,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 92.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 88.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 24.3,
+      "year": 2013
+    },
+    "life_expectancy": {
+      "value": 68.7,
+      "year": 2013
+    },
+    "life_expectancy_female": {
+      "value": 69.9,
+      "year": 2013
+    },
+    "life_expectancy_male": {
+      "value": 67.5,
+      "year": 2013
+    },
+    "malaria_cases": {
+      "value": 4.1,
+      "year": 2014
+    },
+    "maternal_mortality": {
+      "value": 200.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 0.93,
+      "year": 2012
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.003,
+      "year": 2004
+    },
+    "physicians_per_1000": {
+      "value": 0.568,
+      "year": 2012
+    },
+    "tb_prevalence": {
+      "value": 457.0,
+      "year": 2014
+    },
+    "under5_mortality": {
+      "value": 29.6,
+      "year": 2012
+    },
+    "undernourished_pct": {
+      "value": 14.2,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 22.6,
+      "year": 2009
+    }
+  },
+  "Philippines": {
+    "iso3": "PHL",
+    "crude_birth_rate": {
+      "value": 24.4,
+      "year": 2013
+    },
+    "crude_death_rate": {
+      "value": 6.0,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 299.3,
+      "year": 2015
+    },
+    "hiv_prevalence": {
+      "value": 0.1,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 86.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 88.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 20.0,
+      "year": 2013
+    },
+    "life_expectancy": {
+      "value": 68.8,
+      "year": 2013
+    },
+    "life_expectancy_female": {
+      "value": 72.2,
+      "year": 2013
+    },
+    "life_expectancy_male": {
+      "value": 65.4,
+      "year": 2013
+    },
+    "malaria_cases": {
+      "value": 9.8,
+      "year": 2011
+    },
+    "maternal_mortality": {
+      "value": 120.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 5.774,
+      "year": 2004
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.889,
+      "year": 2011
+    },
+    "physicians_per_1000": {
+      "value": 1.11,
+      "year": 2004
+    },
+    "tb_prevalence": {
+      "value": 461.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 25.0,
+      "year": 2011
+    },
+    "undernourished_pct": {
+      "value": 13.5,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 19.9,
+      "year": 2013
+    }
+  },
+  "Singapore": {
+    "iso3": "SGP",
+    "crude_birth_rate": {
+      "value": 9.8,
+      "year": 2014
+    },
+    "crude_death_rate": {
+      "value": 4.7,
+      "year": 2014
+    },
+    "govt_health_capex_musd": {
+      "value": 1027.8,
+      "year": 2015
+    },
+    "immunization_dpt": {
+      "value": 96.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 94.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 1.8,
+      "year": 2014
+    },
+    "life_expectancy": {
+      "value": 82.7,
+      "year": 2014
+    },
+    "life_expectancy_female": {
+      "value": 84.9,
+      "year": 2014
+    },
+    "life_expectancy_male": {
+      "value": 80.5,
+      "year": 2014
+    },
+    "malaria_cases": {
+      "value": 1.1,
+      "year": 2014
+    },
+    "maternal_mortality": {
+      "value": 2.0,
+      "year": 2014
+    },
+    "nurses_midwives_per_1000": {
+      "value": 5.649,
+      "year": 2013
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.404,
+      "year": 2013
+    },
+    "physicians_per_1000": {
+      "value": 1.913,
+      "year": 2013
+    },
+    "tb_prevalence": {
+      "value": 36.9,
+      "year": 2014
+    },
+    "under5_mortality": {
+      "value": 2.6,
+      "year": 2014
+    },
+    "underweight_children_pct": {
+      "value": 3.3,
+      "year": 2000
+    }
+  },
+  "Thailand": {
+    "iso3": "THA",
+    "crude_birth_rate": {
+      "value": 10.2,
+      "year": 2013
+    },
+    "crude_death_rate": {
+      "value": 7.7,
+      "year": 2013
+    },
+    "govt_health_capex_musd": {
+      "value": 476.8,
+      "year": 2015
+    },
+    "hiv_deaths": {
+      "value": 16000.0,
+      "year": 2016
+    },
+    "hiv_prevalence": {
+      "value": 1.1,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 100.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 99.0,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 6.8,
+      "year": 2012
+    },
+    "life_expectancy": {
+      "value": 74.45,
+      "year": 2013
+    },
+    "life_expectancy_female": {
+      "value": 77.8,
+      "year": 2013
+    },
+    "life_expectancy_male": {
+      "value": 71.1,
+      "year": 2013
+    },
+    "malaria_cases": {
+      "value": 33.0,
+      "year": 2011
+    },
+    "maternal_mortality": {
+      "value": 26.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 2.08,
+      "year": 2010
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.13,
+      "year": 2010
+    },
+    "physicians_per_1000": {
+      "value": 0.394,
+      "year": 2010
+    },
+    "tb_prevalence": {
+      "value": 159.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 9.0,
+      "year": 2013
+    },
+    "undernourished_pct": {
+      "value": 7.4,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 9.2,
+      "year": 2012
+    }
+  },
+  "Vietnam": {
+    "iso3": "VNM",
+    "crude_birth_rate": {
+      "value": 17.2,
+      "year": 2014
+    },
+    "crude_death_rate": {
+      "value": 6.9,
+      "year": 2014
+    },
+    "govt_health_capex_musd": {
+      "value": 914.5,
+      "year": 2015
+    },
+    "hiv_deaths": {
+      "value": 8000.0,
+      "year": 2016
+    },
+    "hiv_prevalence": {
+      "value": 0.4,
+      "year": 2016
+    },
+    "immunization_dpt": {
+      "value": 95.0,
+      "year": 2014
+    },
+    "immunization_measles": {
+      "value": 86.2,
+      "year": 2014
+    },
+    "infant_mortality": {
+      "value": 14.9,
+      "year": 2014
+    },
+    "life_expectancy": {
+      "value": 73.3,
+      "year": 2014
+    },
+    "life_expectancy_female": {
+      "value": 76.0,
+      "year": 2014
+    },
+    "life_expectancy_male": {
+      "value": 70.6,
+      "year": 2014
+    },
+    "malaria_cases": {
+      "value": 51.6,
+      "year": 2011
+    },
+    "maternal_mortality": {
+      "value": 49.0,
+      "year": 2013
+    },
+    "nurses_midwives_per_1000": {
+      "value": 1.226,
+      "year": 2013
+    },
+    "pharma_workers_per_1000": {
+      "value": 0.31,
+      "year": 2011
+    },
+    "physicians_per_1000": {
+      "value": 1.18,
+      "year": 2013
+    },
+    "tb_prevalence": {
+      "value": 218.0,
+      "year": 2012
+    },
+    "under5_mortality": {
+      "value": 22.4,
+      "year": 2013
+    },
+    "undernourished_pct": {
+      "value": 11.0,
+      "year": 2015
+    },
+    "underweight_children_pct": {
+      "value": 12.0,
+      "year": 2011
+    }
+  }
+}

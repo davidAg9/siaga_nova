@@ -1,0 +1,33 @@
+<svg width="620" height="200" viewBox="0 0 620 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SIAGA NOVA logo">
+  <title>SIAGA NOVA wordmark with the eye-and-pulse icon and tagline</title>
+  <defs>
+    <linearGradient id="iris2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3987e5"/>
+      <stop offset="1" stop-color="#1c5cab"/>
+    </linearGradient>
+  </defs>
+  <!-- icon (scaled) -->
+  <g transform="translate(10,20) scale(0.67)">
+    <path d="M28 120 C70 66, 170 66, 212 120 C170 174, 70 174, 28 120 Z"
+          fill="none" stroke="#0d366b" stroke-width="9" stroke-linejoin="round"/>
+    <circle cx="120" cy="120" r="42" fill="url(#iris2)"/>
+    <circle cx="120" cy="120" r="42" fill="none" stroke="#cde2fb" stroke-width="3" opacity="0.5"/>
+    <circle cx="120" cy="120" r="20" fill="none" stroke="#cde2fb" stroke-width="3" opacity="0.7"/>
+    <circle cx="120" cy="120" r="8" fill="#fcfcfb"/>
+    <path d="M40 120 H86 l10 -26 l14 52 l12 -34 l9 8 H150"
+          fill="none" stroke="#eb6834" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M150 120 H176 l10 -14 l10 14 H208"
+          fill="none" stroke="#eb6834" stroke-width="6" stroke-linecap="round"
+          stroke-linejoin="round" stroke-dasharray="2 12" opacity="0.9"/>
+  </g>
+  <!-- wordmark -->
+  <text x="188" y="105" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="72" font-weight="800" letter-spacing="-1">
+    <tspan fill="#0b0b0b">SIA</tspan><tspan fill="#2a78d6">GA</tspan>
+  </text>
+  <text x="192" y="142" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="600" letter-spacing="7" fill="#52514e">NOVA</text>
+  <!-- tagline -->
+  <text x="192" y="172" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="15" font-weight="400" fill="#898781">The eye that watches five years ahead</text>
+</svg>
