@@ -28,9 +28,9 @@ before one.
 
 | Validation | R2 | MAE |
 |---|---|---|
-| Future of known countries (2012 to 2014) | 0.92 | 1.13 years |
-| Unseen country (leave-one-country-out) | 0.71 | 2.45 years |
-| Out-of-source vs World Bank (2015 to 2019) | 0.75 | 2.08 years |
+| Future of known countries (2012 to 2014) | 0.93 | 1.08 years |
+| Unseen country (leave-one-country-out) | 0.70 | 2.68 years |
+| Out-of-source vs World Bank (2015 to 2019) | 0.76 | 1.96 years |
 
 ### SDG alignment
 

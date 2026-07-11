@@ -1,18 +1,18 @@
 {
   "loco_cv": {
-    "r2": 0.712,
-    "rmse_years": 2.95,
-    "mae_years": 2.45
+    "r2": 0.697,
+    "rmse_years": 3.03,
+    "mae_years": 2.68
   },
   "temporal_2012_2014": {
-    "r2": 0.922,
-    "rmse_years": 1.47,
-    "mae_years": 1.13
+    "r2": 0.926,
+    "rmse_years": 1.43,
+    "mae_years": 1.08
   },
   "worldbank_oot_2015_2019": {
-    "r2": 0.747,
-    "rmse_years": 2.48,
-    "mae_years": 2.08,
+    "r2": 0.761,
+    "rmse_years": 2.41,
+    "mae_years": 1.96,
     "n": 50
   }
 }

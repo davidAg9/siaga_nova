@@ -34,7 +34,8 @@ WIDE_FILES = [
 ]
 
 # World Bank Open Data indicators (API v2). Used for validation, per-capita
-# normalization, and the contextual predictors (GDP per capita, sanitation).
+# normalization, and the contextual predictors (GDP per capita, sanitation,
+# agriculture share of GDP as a structural determinant).
 WB_INDICATORS = {
     "SP.DYN.LE00.IN": "wb_life_expectancy", "SH.MED.PHYS.ZS": "wb_physicians_per_1000",
     "SH.MED.NUMW.P3": "wb_nurses_midwives_per_1000", "SH.XPD.CHEX.PC.CD": "wb_health_exp_per_capita_usd",
@@ -42,6 +43,7 @@ WB_INDICATORS = {
     "SN.ITK.DEFC.ZS": "wb_undernourished_pct", "SH.TBS.INCD": "wb_tb_incidence_per_100k",
     "SP.POP.TOTL": "wb_population", "SP.DYN.CBRT.IN": "wb_crude_birth_rate",
     "NY.GDP.PCAP.CD": "wb_gdp_per_capita", "SH.STA.BASS.ZS": "wb_sanitation_pct",
+    "NV.AGR.TOTL.ZS": "wb_agriculture_pct_gdp",
 }
 
 TARGET = "life_expectancy"
@@ -67,6 +69,9 @@ FEATURE_SPEC = [
     ("log_capex_per_capita", 1, "actionable"),
     ("log_gdp_per_capita", 1, "context"),
     ("sanitation_pct", 1, "actionable"),
+    ("agriculture_pct_gdp", -1, "context"),
+    ("temp_c", 0, "context"),
+    ("precip_mm", 0, "context"),
     ("year", 0, "context"),
 ]
 FEATURES = [f for f, _, _ in FEATURE_SPEC]

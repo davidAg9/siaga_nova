@@ -145,7 +145,7 @@ def theme_vars():
 # Run a tiny JS probe to detect dark mode and store the result.
 # This fires once on first load; subsequent reruns read the cached value.
 if "_siaga_theme_probed" not in st.session_state:
-    st.components.v1.html(
+    st.html(
         """
 <script>
   (function() {
@@ -153,7 +153,7 @@ if "_siaga_theme_probed" not in st.session_state:
       .getPropertyValue('background-color');
     // Parse rgb(r, g, b) or #rrggbb
     let r=255, g=255, b=255;
-    const m = bg.match(/(\\d+)\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)/);
+    const m = bg.match(/(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
     if (m) { r=+m[1]; g=+m[2]; b=+m[3]; }
     const lum = (0.299*r + 0.587*g + 0.114*b) / 255;
     const dark = lum < 0.5;
@@ -163,7 +163,6 @@ if "_siaga_theme_probed" not in st.session_state:
   })();
 </script>
         """,
-        height=0,
     )
     st.session_state["_siaga_theme_probed"] = True
     # Default to light until the probe fires; the postMessage handler below
@@ -379,7 +378,7 @@ with view[0]:
                         bgcolor=GEO_BG, showframe=False, showcoastlines=True,
                         coastlinecolor=GRID, showland=True, landcolor=GEO_LAND,
                         showcountries=True, countrycolor=GRID)
-        st.plotly_chart(plotly_base(fig, 420), use_container_width=True, config={"displayModeBar": False})
+        st.plotly_chart(plotly_base(fig, 420), width="stretch", config={"displayModeBar": False})
     with m2:
         st.subheader("The inequality gap (SDG 10)")
         st.caption("Maternal mortality, latest available per country. The gap is the story.")
@@ -389,7 +388,7 @@ with view[0]:
                                hovertemplate="<b>%{y}</b><br>%{x:.0f} per 100k<extra></extra>",
                                hoverlabel=dict(bgcolor=HOVER_BG, font_color=INK, bordercolor=GRID, font_size=12)))
         fig.update_traces(marker_line_width=0)
-        st.plotly_chart(plotly_base(fig, 420), use_container_width=True, config={"displayModeBar": False})
+        st.plotly_chart(plotly_base(fig, 420), width="stretch", config={"displayModeBar": False})
         st.caption(f"Dying in childbirth is ~{mm.max()/mm.min():.0f}x more likely in {mm.idxmax()} than {mm.idxmin()}.")
 
     st.subheader("Life expectancy trajectories, 2004 to 2014")
@@ -401,7 +400,7 @@ with view[0]:
         fig.add_trace(go.Scatter(x=le_wide.index, y=le_wide[c], name=c, mode="lines",
                                  line=dict(color=hues[i], width=2.2),
                                  hovertemplate=f"<b>{c}</b><br>%{{y:.1f}} yrs (%{{x}})<extra></extra>"))
-    st.plotly_chart(plotly_base(fig, 380), use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(plotly_base(fig, 380), width="stretch", config={"displayModeBar": False})
 
 # ================================================================== DRIVERS ======
 with view[1]:
@@ -415,7 +414,7 @@ with view[1]:
                            hovertemplate="<b>%{y}</b><br>%{x:.2f} years<extra></extra>",
                            hoverlabel=dict(bgcolor=HOVER_BG, font_color=INK, bordercolor=GRID, font_size=12)))
     fig.update_traces(marker_line_width=0, textfont_color=MUTED)
-    st.plotly_chart(plotly_base(fig, 460), use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(plotly_base(fig, 460), width="stretch", config={"displayModeBar": False})
 
     top = imp.sort_values(ascending=False)
     st.markdown(f"""
@@ -474,7 +473,7 @@ with view[2]:
                                text=[f"{base_pred:.1f}", f"{new_pred:.1f}"], textposition="outside"))
         fig.update_traces(marker_line_width=0, width=0.5, textfont_color=INK)
         fig.update_yaxes(range=[min(base_pred, new_pred) - 3, max(base_pred, new_pred) + 3])
-        st.plotly_chart(plotly_base(fig, 300, "Predicted life expectancy"), use_container_width=True,
+        st.plotly_chart(plotly_base(fig, 300, "Predicted life expectancy"), width="stretch",
                         config={"displayModeBar": False})
         st.caption("Note: a directional decision-support estimate, not a clinical guarantee. "
                    "See the notebook for validation metrics and limitations.")
@@ -509,7 +508,7 @@ with view[3]:
                              hovertemplate="<b>forecast</b><br>%{y:.0f} (%{x})<extra></extra>",
                              hoverlabel=dict(bgcolor=HOVER_BG, font_color=INK, bordercolor=GRID, font_size=12)))
     st.plotly_chart(plotly_base(fig, 420, f"{country}: {disease.upper()} per 100,000"),
-                    use_container_width=True, config={"displayModeBar": False})
+                    width="stretch", config={"displayModeBar": False})
 
     method = f["method"].iloc[0] if len(f) else "n/a"
     ets_mae = f["ets_backtest_mae"].iloc[0] if len(f) else np.nan

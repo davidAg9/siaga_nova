@@ -26,6 +26,7 @@ requests = ">=2.32"
 ipykernel = ">=6.29"
 jupytext = ">=1.16"
 nbconvert = ">=7.16"
+python-pptx = ">=1.0.2,<2"
 
 # Convenience commands, run from inside siaga/ with `pixi run <task>`.
 [tasks]

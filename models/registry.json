@@ -2,10 +2,10 @@
   {
     "version": "v1",
     "trained_rows": 98,
-    "features": 14,
-    "loco_mae": 2.45,
-    "temporal_mae": 1.13,
-    "oot_mae": 2.08,
-    "oot_r2": 0.747
+    "features": 16,
+    "loco_mae": 2.68,
+    "temporal_mae": 1.08,
+    "oot_mae": 1.96,
+    "oot_r2": 0.761
   }
 ]

@@ -119,6 +119,13 @@ def build_panel():
 
     panel = tidy.pivot_table(index=["country", "year"], columns="indicator", values="value").reset_index()
     panel.insert(1, "iso3", panel["country"].map(C.ISO3))
+
+    # Merge weather data if available
+    weather_path = C.RAW / "weather.csv"
+    if weather_path.exists():
+        weather = pd.read_csv(weather_path)
+        panel = panel.merge(weather, on=["iso3", "year"], how="left")
+
     return panel.sort_values(["country", "year"]).reset_index(drop=True), quirks
 
 

@@ -24,7 +24,8 @@ def build_frame(panel, wb):
     interp = ["physicians_per_1000", "nurses_midwives_per_1000", "pharma_workers_per_1000",
               "immunization_dpt", "immunization_measles", "tb_prevalence", "hiv_prevalence",
               "undernourished_pct", "crude_birth_rate", "govt_health_capex_musd",
-              "wb_population", "wb_gdp_per_capita", "wb_sanitation_pct", "wb_agriculture_pct_gdp"]
+              "wb_population", "wb_gdp_per_capita", "wb_sanitation_pct", "wb_agriculture_pct_gdp",
+              "temp_c", "precip_mm"]
     out = []
     for _, g in df.groupby("country"):
         g = g.sort_values("year").set_index("year")
@@ -94,6 +95,8 @@ def _oot_frame(train, panel, wb):
         "crude_birth_rate": oot.wb_crude_birth_rate, "log_capex_per_capita": np.nan,
         "log_gdp_per_capita": np.log1p(oot.wb_gdp_per_capita), "sanitation_pct": oot.wb_sanitation_pct,
         "agriculture_pct_gdp": oot.wb_agriculture_pct_gdp if "wb_agriculture_pct_gdp" in oot.columns else np.nan,
+        "temp_c": oot.iso3.map(train[train.year == 2014].set_index("iso3")["temp_c"]).values if "temp_c" in train.columns else np.nan,
+        "precip_mm": oot.iso3.map(train[train.year == 2014].set_index("iso3")["precip_mm"]).values if "precip_mm" in train.columns else np.nan,
         "year": oot.year}
     return pd.DataFrame({f: colmap[f] for f in C.FEATURES}), oot["wb_life_expectancy"].reset_index(drop=True)
 

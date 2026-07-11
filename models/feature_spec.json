@@ -65,6 +65,16 @@
     "kind": "context"
   },
   {
+    "feature": "temp_c",
+    "monotonic": 0,
+    "kind": "context"
+  },
+  {
+    "feature": "precip_mm",
+    "monotonic": 0,
+    "kind": "context"
+  },
+  {
     "feature": "year",
     "monotonic": 0,
     "kind": "context"
