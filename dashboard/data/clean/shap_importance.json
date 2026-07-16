@@ -1,0 +1,18 @@
+{
+  "nurses_midwives_per_1000": 0.01045373005337368,
+  "undernourished_pct": 0.01614990137342574,
+  "log_capex_per_capita": 0.06994952734157317,
+  "immunization_dpt": 0.1147852952761578,
+  "pharma_workers_per_1000": 0.16347533006742193,
+  "temp_c": 0.1783439563215123,
+  "year": 0.239267144154741,
+  "precip_mm": 0.24816414448750285,
+  "physicians_per_1000": 0.3964095312471559,
+  "agriculture_pct_gdp": 0.5370055889601544,
+  "hiv_prevalence": 0.561341843328018,
+  "immunization_measles": 0.6113049923071376,
+  "crude_birth_rate": 0.6334717703494314,
+  "tb_prevalence": 0.906460038403544,
+  "log_gdp_per_capita": 0.9385842003707987,
+  "sanitation_pct": 1.9040390575149504
+}

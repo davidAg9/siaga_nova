@@ -27,10 +27,11 @@ import streamlit as st
 BLUE, AQUA, YELLOW, GREEN = "#2a78d6", "#1baf7a", "#eda100", "#008300"
 VIOLET, RED, MAGENTA, ORANGE = "#4a3aa7", "#e34948", "#e87ba4", "#eb6834"
 
-DATA = Path(__file__).resolve().parents[1] / "data" / "clean"
-MODELS = Path(__file__).resolve().parents[1] / "models" / "siaga_model.joblib"  # the versioned model
+DATA = Path(__file__).resolve().parent / "data" / "clean"
+MODELS = Path(__file__).resolve().parent / "models" / "siaga_model.joblib"  # the versioned model
 API = os.environ.get("SIAGA_API", "http://localhost:8080")
 API_KEY = os.environ.get("SIAGA_API_KEY", "")
+API_TIMEOUT = float(os.environ.get("SIAGA_API_TIMEOUT", "10"))  # longer for Render cold starts
 
 ISO3 = {"Brunei Darussalam": "BRN", "Cambodia": "KHM", "Indonesia": "IDN", "Lao PDR": "LAO",
         "Malaysia": "MYS", "Myanmar": "MMR", "Philippines": "PHL", "Singapore": "SGP",
@@ -263,7 +264,7 @@ st.markdown(f"""
 def api_get(path):
     headers = {"X-API-Key": API_KEY} if API_KEY else {}
     try:
-        r = requests.get(f"{API}{path}", timeout=1.5, headers=headers)
+        r = requests.get(f"{API}{path}", timeout=API_TIMEOUT, headers=headers)
         if r.ok:
             return r.json()
     except requests.RequestException:

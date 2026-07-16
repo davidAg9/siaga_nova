@@ -1,0 +1,9 @@
+# SIAGA Dashboard - minimal dependencies for Streamlit Cloud
+# Use stable PyPI versions (not pixi/conda-forge builds)
+streamlit>=1.40,<2
+pandas>=2.0,<3
+numpy>=1.26,<3
+plotly>=5.20,<7
+requests>=2.32
+joblib>=1.4
+scikit-learn>=1.4,<2
